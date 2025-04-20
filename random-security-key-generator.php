@@ -3,7 +3,7 @@
  * Plugin Name:        Random Security Key Generator
  * Plugin URI:         https://github.com/WPSpeedExpert/random-security-key-generator
  * Description:        Generates random security keys and displays them in a copy‑button code block with light/dark theme support.
- * Version:            1.0.2
+ * Version:            1.0.4
  * Author:             OctaHexa
  * Author URI:         https://octahexa.com
  * Text Domain:        random-security-key-generator
