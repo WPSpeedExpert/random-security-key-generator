@@ -1,6 +1,6 @@
 # Random Security Key Generator
 
-![Plugin Version](https://img.shields.io/badge/version-1.0.2-blue.svg)  
+![Plugin Version](https://img.shields.io/badge/version-1.0.4-blue.svg)  
 [![License: GPLv3+](https://img.shields.io/badge/license-GPLv3%2B-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 Easily generate secure, random alphanumeric keys using a simple shortcode. Great for API tokens, passwords, WP config keys, and more.
@@ -46,6 +46,9 @@ No—keys are generated on‑the‑fly and never stored.
 1. Example of the [random_security_key] shortcode output with Copy button.
 
 ## 📝 Changelog
+
+**1.0.4**
+* Code block layout improved and copy button no longer overlaps.
 
 **1.0.2**
 
