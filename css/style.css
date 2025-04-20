@@ -1,0 +1,62 @@
+/*!
+ * File: css/style.css
+ * Version: 1.0.2
+ * Description: Light/dark theme styles and layout for the code block + copy button.
+ */
+
+/* Container */
+.rskg-container {
+  position: relative;
+  display: inline-block;
+  margin: 1em 0;
+}
+.rskg-code {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: Menlo, monospace;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+  .rskg-code {
+    background: #f5f5f5;
+    color: #222;
+    border: 1px solid #ddd;
+  }
+  .rskg-copy-button {
+    background: #fff;
+    color: #222;
+    border: 1px solid #ccc;
+  }
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .rskg-code {
+    background: #2d2d2d;
+    color: #e8e8e8;
+    border: 1px solid #444;
+  }
+  .rskg-copy-button {
+    background: #3a3a3a;
+    color: #eee;
+    border: 1px solid #555;
+  }
+}
+
+/* Copy button */
+.rskg-copy-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.rskg-copy-button:hover {
+  opacity: 0.85;
+}
