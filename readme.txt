@@ -4,7 +4,7 @@ Tags:                shortcode, security, key, generator, random, api key, passw
 Requires at least:   5.6
 Tested up to:        6.8
 Requires PHP:        7.4
-Stable tag:          1.0.2
+Stable tag:          1.0.4
 License:             GPLv3 or later
 License URI:         https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +52,11 @@ No, keys are generated on-the-fly and not stored in the database.
 1. Example output of the `[random_security_key]` shortcode on a page with the Copy button.
 
 == Changelog ==
+
+= 1.0.4 =
+* Refactor code block layout to CSS grid  
+* Fix copy‐button overlap issue  
+* Consolidate light/dark theme styles
 
 = 1.0.2 =  
 * Reorganized asset folders; added file headers.  
