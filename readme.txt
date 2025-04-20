@@ -4,9 +4,9 @@ Tags:                shortcode, security, key, generator, random, api key, passw
 Requires at least:   5.6
 Tested up to:        6.8
 Requires PHP:        7.4
-Stable tag:          1.0.0
-License:             GPLv2 or later
-License URI:         https://www.gnu.org/licenses/gpl-2.0.html
+Stable tag:          1.0.2
+License:             GPLv3 or later
+License URI:         https://www.gnu.org/licenses/gpl-3.0.html
 
 Easily generate secure, random alphanumeric keys using a simple shortcode. Great for tokens, passwords, or config keys.
 
@@ -16,52 +16,65 @@ Need to generate secure keys or tokens? This lightweight plugin provides a short
 
 Perfect for:
 
-- API key generation
-- Password creation
-- WP config keys
-- Anywhere a unique token is needed
+* API key generation
+* Password creation
+* WP config keys
+* Anywhere a unique token is needed
 
-**Usage:**
+**Usage:**  
 Just place the shortcode `[random_security_key]` anywhere on your site. Optionally, define the key length.
 
-**Example:**
-
+**Example:**  
 `[random_security_key length=48]`
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/random-security-key-generator` directory, or install via the WordPress plugins screen.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Upload the plugin files to the `/wp-content/plugins/random-security-key-generator` directory, or install via the WordPress plugins screen.  
+2. Activate the plugin through the **Plugins** menu in WordPress.  
 3. Use the `[random_security_key]` shortcode in posts, pages, or widgets.
 
 == Frequently Asked Questions ==
 
-= What characters are used? =
+= What characters are used? =  
 Only uppercase, lowercase letters and numbers (A–Z, a–z, 0–9).
 
-= How secure are the keys? =
-Keys are generated using PHP's `random_int()` for cryptographic randomness.
+= How secure are the keys? =  
+Keys are generated using PHP’s `random_int()` for cryptographic randomness.
 
-= Can I generate keys longer than 32 characters? =
-Yes. Use `[random_security_key length=64]` or any positive integer >= 8.
+= Can I generate keys longer than 32 characters? =  
+Yes. Use `[random_security_key length=64]` or any positive integer ≥ 8.
 
-= Does this plugin store generated keys? =
+= Does this plugin store generated keys? =  
 No, keys are generated on-the-fly and not stored in the database.
 
 == Screenshots ==
 
-1. Example output of the `[random_security_key]` shortcode on a page.
+1. Example output of the `[random_security_key]` shortcode on a page with the Copy button.
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.2 =  
+* Reorganized asset folders; added file headers.  
+* Updated license to GPLv3+.  
+* General code and documentation improvements.
+
+= 1.0.1 =  
+* Added light/dark theme CSS.  
+* Implemented Copy button functionality.  
+* Included `uninstall.php` for WP.org compliance.
+
+= 1.0.0 =  
 * Initial release – shortcode to generate random security keys.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 1.0.2 =  
+Small improvements; no user-facing changes.
+
+= 1.0.0 =  
 Initial version.
 
 == License ==
 
-This plugin is licensed under the GPLv2 or later.
+This plugin is licensed under the GPLv3 or later.  
+https://www.gnu.org/licenses/gpl-3.0.html
