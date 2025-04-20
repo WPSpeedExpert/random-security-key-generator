@@ -25,7 +25,7 @@ Easily generate secure, random alphanumeric keys using a simple shortcode. Great
 	4.	Specify a custom length:
 
 [random_security_key length=64]
-
+```
 
 
 ❓ Frequently Asked Questions
