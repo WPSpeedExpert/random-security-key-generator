@@ -1,6 +1,6 @@
 # Random Security Key Generator
 
-[![Latest Tag](https://img.shields.io/github/v/tag/WPSpeedExpert/random-security-key-generator?sort=semver)](https://github.com/WPSpeedExpert/random-security-key-generator/releases)
+![Plugin Version](https://img.shields.io/badge/version-1.0.2-blue.svg)
 [![License: GPLv3+](https://img.shields.io/badge/license-GPLv3%2B-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 Easily generate secure, random alphanumeric keys using a simple shortcode. Great for API tokens, passwords, WP config keys, and more.
