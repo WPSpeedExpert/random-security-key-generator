@@ -1,62 +1,60 @@
 /*!
  * File: css/style.css
- * Version: 1.0.2
- * Description: Light/dark theme styles and layout for the code block + copy button.
+ * Version: 1.0.4
+ * Description: Grid‑based layout + light/dark theming for code block + copy button.
  */
 
-/* Container */
+/* Outer container: two columns (code / button) */
 .rskg-container {
-  position: relative;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: #f5f5f5;
+  border-left: 4px solid #3ecf8e;
+  border-radius: 4px;
+  overflow: hidden;
   margin: 1em 0;
 }
+
+/* Code area */
 .rskg-code {
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  overflow-x: auto;
+  margin: 0;
+  padding: 0.75em 1em;
   font-family: Menlo, monospace;
   font-size: 0.9em;
-  margin: 0;
-}
-
-/* Light theme */
-@media (prefers-color-scheme: light) {
-  .rskg-code {
-    background: #f5f5f5;
-    color: #222;
-    border: 1px solid #ddd;
-  }
-  .rskg-copy-button {
-    background: #fff;
-    color: #222;
-    border: 1px solid #ccc;
-  }
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  .rskg-code {
-    background: #2d2d2d;
-    color: #e8e8e8;
-    border: 1px solid #444;
-  }
-  .rskg-copy-button {
-    background: #3a3a3a;
-    color: #eee;
-    border: 1px solid #555;
-  }
+  color: #222;
+  overflow-x: auto;
+  background: transparent; /* let container show */
 }
 
 /* Copy button */
 .rskg-copy-button {
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em;
+  margin: 0.5em;
   padding: 0.3em 0.6em;
   font-size: 0.8em;
   cursor: pointer;
   border-radius: 3px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #222;
+  white-space: nowrap;
 }
 .rskg-copy-button:hover {
   opacity: 0.85;
+}
+
+/* Dark theme overrides */
+@media (prefers-color-scheme: dark) {
+  .rskg-container {
+    background: #2d2d2d;
+    border-left-color: #3ecf8e;
+  }
+  .rskg-code {
+    color: #e8e8e8;
+  }
+  .rskg-copy-button {
+    background: #3a3a3a;
+    border-color: #555;
+    color: #eee;
+  }
 }
